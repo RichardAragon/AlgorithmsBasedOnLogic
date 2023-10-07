@@ -1,8 +1,6 @@
 # AlgorithmsBasedOnLogic
 The Repository that houses the concept behind utilizing AI to create algorithms based on any logical concept
 
-Sure, here is a README file for the GitHub repository called `AlgorithmsBasedonLogic`:
-
 
 # Algorithms Based on Logic
 
