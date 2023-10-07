@@ -1,0 +1,37 @@
+import json
+import requests
+
+def generate_algorithm(logical_concept):
+
+    # Prepare the request payload.
+    payload = {
+        "logical_concept": logical_concept
+    }
+
+    # Make the request to the LLM model.
+    response = requests.post("http://localhost:8000/generate_algorithm", json=payload)
+
+    # Check the response status code.
+    if response.status_code == 200:
+
+        # Parse the response JSON.
+        response_json = json.loads(response.content)
+
+        # Extract the generated algorithm.
+        algorithm = response_json["algorithm"]
+
+        # Return the generated algorithm.
+        return algorithm
+
+    else:
+
+        # Raise an exception.
+        raise Exception("Failed to generate algorithm.")
+
+# Example usage:
+
+logical_concept = "Sorting"
+algorithm = generate_algorithm(logical_concept)
+
+# Print the generated algorithm.
+print(algorithm)
