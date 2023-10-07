@@ -1,0 +1,19 @@
+def sort(list_of_numbers):
+
+    # Get the generated algorithm.
+    algorithm = generate_algorithm("Sorting")
+
+    # Apply the algorithm to the list of numbers.
+    for step in algorithm:
+        eval(step)
+
+    # Return the sorted list of numbers.
+    return list_of_numbers
+
+# Example usage:
+
+list_of_numbers = [5, 3, 2, 1, 4]
+sorted_list_of_numbers = sort(list_of_numbers)
+
+# Print the sorted list of numbers.
+print(sorted_list_of_numbers)
