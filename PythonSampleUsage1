@@ -1,0 +1,17 @@
+>>> import generate_algorithm
+>>>
+>>> llm = ...
+>>>
+>>> logical_concept = "Sorting"
+>>>
+>>> algorithm = generate_algorithm.generate_algorithm(llm, logical_concept)
+>>>
+>>> print(algorithm)
+
+Given a list of unsorted elements, the following algorithm sorts the list in ascending order:
+
+1. Compare the first two elements of the list.
+2. If the first element is greater than the second element, swap them.
+3. Repeat steps 1 and 2 until the entire list is sorted.
+
+This algorithm is known as the bubble sort algorithm. It is a simple and efficient algorithm for sorting small lists.
